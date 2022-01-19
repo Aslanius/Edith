@@ -135,14 +135,15 @@ button.carousel-control-prev{
   padding-bottom: 20px;
 }
 .logo_img {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  margin-left:120px;
+  margin-top:40px;
 }
 .footer_rights {
   color: #fff;
   font-family: 'Quicksand', sans-serif;
   margin-left: 150px;
   margin-bottom: 50px;
+  padding-top:40px;
 }
 
 .footer-col{
