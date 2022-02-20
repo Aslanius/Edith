@@ -1,0 +1,53 @@
+const header = document.querySelector('header');
+
+window.addEventListener("scroll", () =>{
+  if(window.scrollY >= 450){
+      header.classList.add("scrolled")
+  }
+  else if(window.scrollY <= 400) {
+      header.classList.remove("scrolled")
+  }
+});
+
+
+function aituon() {
+    document.getElementById("cardimg").src = "img/asaitu.jpg"
+}
+function aituoff() {
+    document.getElementById("cardimg").src = "img/mac.jpg"
+}
+
+function kaznuion() {
+    document.getElementById("cardimg1").src = "img/kaznuilogo.jpg"
+}
+function kaznuioff() {
+    document.getElementById("cardimg1").src = "img/kazakhskij-natsionalnyj-universitet-iskusstv.jpg"
+}
+
+function sduon() {
+    document.getElementById("cardimg2").src = "img/sdulogo.jpg"
+}
+function sduoff() {
+    document.getElementById("cardimg2").src = "img/scale_1200.jfif"
+}
+
+function kasguuon() {
+    document.getElementById("cardimg3").src = "img/kazguulogo.jpg"
+}
+function kasguuoff() {
+    document.getElementById("cardimg3").src = "img/PVeuQczq.jpg"
+}
+
+function kbtuon() {
+    document.getElementById("cardimg4").src = "img/kbtulogo.jpg"
+}
+function kbtuoff() {
+    document.getElementById("cardimg4").src = "img/KBTU-building.jpg"
+}
+
+function kstuon() {
+    document.getElementById("cardimg5").src = "img/kargtulogo.jpg"
+}
+function kstuoff() {
+    document.getElementById("cardimg5").src = "img/kstu.jpg"
+}
