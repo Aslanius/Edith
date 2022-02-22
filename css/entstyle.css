@@ -1,0 +1,62 @@
+
+table{
+    font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.instr ol{
+    color: grey;
+    padding-left:180px;
+}
+.para p{
+    text-align: center;
+    font-size:30px;
+    color:aqua;
+}
+.par p{
+    font-size: 20px;
+    padding-left: 10px;
+    color:grey;
+}
+
+img{
+    padding-left: 200px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.malkin ol{
+    padding-left:180px;
+    color:grey;
+}
+.ovi li{
+    padding-left:180px;
+    color:grey;
+}
+p{
+    padding-left:180px;
+    color:grey;
+}
+.kovi ul{
+    padding-left:180px;
+    color:grey;
+}
+body{
+    background-color: #0d1420;
+}
+.section_about {
+    margin-top: 230px;
+}
+
+
+
