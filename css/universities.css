@@ -2,6 +2,12 @@ html{
    font-size:  15px;
     display: contents;
 }
+.main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(224, 221, 221);
+  margin-top: 20px;
+}
 .header{
   color: white;
   background: transparent;
