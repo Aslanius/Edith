@@ -23,44 +23,42 @@
 </head>
 
 <body>
-  
-  <header class="header-page">
-    <div class=" header-page__container">
-      <div class="header-page__start">
-        <div class="logo">
-          <img class="logo__img" src="img/Universities/logo.png" alt="" width="20%" >
-        </div>
-      </div>
-        
-      <div class="header-page__end">
-        <nav class="header-page__nav">
-          <ul class="header-page__ul">
-            <li class="header-page__li">
-              <a class="header-page__link" href="universities.html">
-                <span class="header-page__text">Universities</span>
-              </a>
-            </li>
-            <li class="header-page__li">
-              <a class="header-page__link" href="./about/about.html">
-                <span class="header-page__text">Edu</span>
-              </a>
-            </li>
-            <li class="header-page__li">
-              <a class="header-page__link" href="news.html">
-                <span class="header-page__text">News</span>
-              </a>
-            </li>
-            <li class="header-page__li">
-              <a class="header-page__link" href="info.html">
-                <span class="header-page__text">Info</span>
-              </a>
-            </li>
-          </ul>       
+  <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo__img" src="img/logo.png" alt="" width="196" height="47.6">
+                  </a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="#">Universities</a></li>
+                    <li class="nav-link"><a href="#">Education</a></li>
+                    <li class="nav-link"><a href="#">News</a></li>
+                    <li class="nav-link"><a href="#">Info</a></li>
+                </ul>
+
+                
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">Universities</a>
+                  <a href="#">Education</a>
+                  <a href="#">News</a>
+                  <a href="#">Info</a>
+                </div>
+                
+                
+                <span class="temik" onclick="openNav()"><img src="img/menu.png" alt="" width="40px" height="40px"></span>
+
         </nav>
-           
-      </div>
-    </div>
-  </header>
+        
+        
+        </div>
+        
+        
+    </header>
+  
 
 
 
@@ -341,39 +339,57 @@ textElement.innerHTML = 'Education of University is aimed at IT and the level of
  
 
 <!-- footer -->
-<footer class="footer-section">
-    
-    <div class="left_hand_side">
-      <img class="logo_img" src="img/logo.png" alt="" width="120" height="29">
-      <p class="footer_rights">All rights reserved</p>
-      <p class="footer_text">© 2022 
-        <strong> Edith.kz</strong>
-      </p>
+<footer class=" text-white text-center text-lg-start" style="background-color: #142850;" >
+    <div class="container p-4" style="background-color: #142850;">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+         
+          <img class="logo_img" src="img/logo.png" alt="" width="120" height="29">
+  
+          <p>
+            if you have any questions or suggestions, you can contact us via messengers or by writing to us by mail
+          </p>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase footertext">Links</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Universities</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Education</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">News</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Info</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0 footertext">Contact</h5>
+          <p>
+            <i class="city"><i class="fas fa-home"></i></i> Nur-Sultan (Astana)</p>
+          <p>
+            <i class="email"><i class="fas fa-envelope-open-text"></i></i> edith@gmail.com</p>
+          <p>
+            <a class="phone" href="tel:+77085176491"><i class="fas fa-phone"></i> +7 (708)517-64-91</a>
+          
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="footer-col">
-      <h4 class="footer_link">links</h4>
-      <ul>
-        <li class="footer_links"><a href="index.html">main</a></li>
-        <li class="footer_links"><a href="main.html">Universities</a></li>
-        <li class="footer_links"><a href="about.html">Education</a></li>
-        <li class="footer_links"><a href="#">News</a></li>
-      </ul>
-    </div>
+  
 
-    <div class="right_hand_side">
-      <h6 class="contact">Contact</h6>
-      <p>
-        <i class="city"><i class="fas fa-home"></i></i> Nur-Sultan (Astana)</p>
-      <p>
-        <i class="email"><i class="fas fa-envelope-open-text"></i></i> edith@gmail.com</p>
-      <p>
-        <a class="phone" href="tel:+77085176491"><i class="fas fa-phone"></i> +7 (708)517-64-91</a>
-      
-    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2020 : Edith</div>
+
   </footer>
-
-
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
