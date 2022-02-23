@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel ="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://kit.fontawesome.com/c98d165499.js"crossorigin="anonymous"></script>
@@ -36,37 +37,32 @@
                     <li class="nav-link"><a href="#">News</a></li>
                     <li class="nav-link"><a href="#">Info</a></li>
                 </ul>
-       
 
-         <div class="container container-menu">
-            <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-              <div class="container container-menu">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="fa fa-bars menuo"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="universities.html" class="nav-link">Universities</a></li>
-                    <li class="nav-item"><a href="./about/about.html" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
-                    <li class="nav-item"><a href="info.html" class="nav-link">Info</a></li>
-                  </ul>
+                
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">Universities</a>
+                  <a href="#">Education</a>
+                  <a href="#">News</a>
+                  <a href="#">Info</a>
                 </div>
-              </div>
-            </nav>
-          </div>
+                
+                
+                <span class="temik" onclick="openNav()"><img src="img/menu.png" alt="" width="40px" height="40px"></span>
 
         </nav>
+        
         
         </div>
         
         
     </header>
+    
 
     <div class="content">
       <div class="row">
        <div class="soz">
-        <h1 class="title">Make the right choice with us</h1>
+        <h1 class="title" data-aos="fade-left">Make the right choice with us</h1>
        </div>
        
 
@@ -79,10 +75,10 @@
           <div class="section__header">
               <h2 class="section__suptitle" >About site</h2>
               <div class="section__text" >
-                  <h3>the purpose of the EDITH website is to help you to choose the best university for you. Graduates on this site can quickly and easily find state and non-state universities and institutes with a high rating.</h3>
+                  <h3 data-aos="fade-left">the purpose of the EDITH website is to help you to choose the best university for you. Graduates on this site can quickly and easily find state and non-state universities and institutes with a high rating.</h3>
               </div>
               <div class="section_text2">
-                <h3>make the right choice yourself</h3>
+                <h3 data-aos="fade-left">make the right choice yourself</h3>
               </div>
           </div>
       </div>
@@ -108,7 +104,7 @@
             <img src="img/first.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <a href="https://london.ac.uk/ways-study/kazakh-british-technical-university-kbtu-international-school-economics-and-social" class="kbtu">
-                <button type="button" class="btn alert-info">Learn more</button>
+                <button type="button" class="btn alert-info button2" onclick="play();">Learn more</button>
               </a>
             </div>
           </div>
@@ -117,7 +113,7 @@
             <img src="img/nu.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <a href="https://nu.edu.kz/admissions/doctorate-phd" class="kbtu">
-                <button type="button" class="btn btn-light">Learn more</button>
+                <button type="button" class="btn btn-light button2" onclick="play();">Learn more</button>
               </a>
             </div>
           </div>
@@ -126,7 +122,7 @@
             <img src="img/third.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
               <a href="https://www.kimep.kz/college-humanities-education/en/language-courses/preparation-for-unt-and-kimep-placement-tests/" class="kbtu">
-                <button type="button" class="btn btn-light">Learn more</button>
+                <button type="button" class="btn btn-light button2" onclick="play();">Learn more</button>
               </a>
             </div>
           </div>
@@ -135,17 +131,17 @@
             <img src="img/sdu.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <a href="https://sdu.edu.kz/ru/spt/" class="kbtu">
-                <button type="button" class="btn btn-light">Learn more</button>
+                <button type="button" class="btn btn-light button25" onclick="play();">Learn more</button>
               </a>
             </div>
           </div>
         </div>
   
-        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev" onclick="play();">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="sr-only" >Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next" onclick="play();">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -209,6 +205,28 @@
     </a>
     </div>
   </div>
+
+  <div class="container cont">
+  <div class="interesting">
+    <h1 class="interesting">FAQ:</h1>
+  </div>
+  <button class="accordion" data-aos="fade-left">Where can I find information about examination</button>
+  <div class="panel">
+    <p>Go to the education section..........</p>
+  </div>
+  
+  <button class="accordion" data-aos="fade-left">Question 2</button>
+  <div class="panel">
+    <p>answer</p>
+  </div>
+  
+  <button class="accordion" data-aos="fade-left">Question  3</button>
+  <div class="panel">
+    <p>Answer.</p>
+  </div>
+</div>
+
+
     
 
 
@@ -260,7 +278,7 @@
 
   
 
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2020 : Edith</div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2022 : Edith</div>
 
   </footer>
 
@@ -273,7 +291,7 @@
 </div>
 
  
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="with.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
